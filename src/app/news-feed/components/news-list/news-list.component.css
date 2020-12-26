@@ -1,0 +1,24 @@
+.list-container {
+  height: 90vh;
+  overflow: auto;
+}
+
+.card-display {
+  display: flex;
+  justify-content: space-around;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.view-button {
+  margin-left: 10rem;
+}
+
+.floating-button {
+  position: absolute;
+  right: 0;
+  top: 25vh;
+}

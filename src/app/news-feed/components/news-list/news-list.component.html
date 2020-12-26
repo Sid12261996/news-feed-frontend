@@ -1,1 +1,22 @@
-<p>news-list works!</p>
+<div class="list-container">
+  <mat-card *ngFor="let news of newsList; let i = index">
+    <mat-card-header class="card-display">
+      <mat-card-title>
+        <div class="title">{{news.title}}</div>
+        <div class="view-button">
+          <button mat-raised-button color="primary" [routerLink]="['/news/details',news.id]">View</button>
+        </div>
+      </mat-card-title>
+      <mat-card-subtitle>Author: {{news.user.name}}</mat-card-subtitle>
+      <mat-card-subtitle>Published on: {{news.createdDate|date}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+  <mat-card *ngIf="newsList.length == 0">
+    <mat-card-header>
+      <mat-card-title>No news-feeds yet</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
+<div class="floating-button">
+  <button mat-raised-button color="primary">publish news</button>
+</div>
