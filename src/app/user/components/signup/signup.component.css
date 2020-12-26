@@ -1,0 +1,10 @@
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  width: 25%;
+  height: 50%;
+  text-align: center;
+}
